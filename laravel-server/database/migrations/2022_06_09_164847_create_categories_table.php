@@ -15,12 +15,7 @@ class CreateCategoriesTable extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->string("Women's Fashion");
-            $table->string("Men's Fashion");
-            $table->string("Kids");
-            $table->string("Beauty & Health");
-            $table->string("Electronics");
-            $table->string("Home & Appliances");
+            $table->string("name");
             $table->timestamps();
         });
     }
