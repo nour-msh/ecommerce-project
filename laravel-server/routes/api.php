@@ -3,8 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use app\Http\Controllers\AddController;
-use app\Http\Controllers\GetController;
+use App\Http\Controllers\AddController;
+use App\Http\Controllers\GetController;
+use App\Http\Controllers\AuthController;
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
@@ -21,3 +22,7 @@ Route::prefix("customer")->group(function(){
     Route::get("/get_categories/{id?}", [GetController::class, "getCategories"]);
 
 });
+
+Route::post("/login", [AuthController::class, "login"]);
+Route::post("/register", [AuthController::class, "register"]);
+Route::post("/logout", [AuthController::class, "logout"]);
