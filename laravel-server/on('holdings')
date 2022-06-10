@@ -1,0 +1,21 @@
+
+   ParseError 
+
+  syntax error, unexpected 'Route' (T_STRING)
+
+  at C:\Users\user\Desktop\ecommerce-project\laravel-server\routes\api.php:17
+     13▕ });
+     14▕ 
+     15▕ Route::prefix("admin")->group(function(){
+     16▕     Route::middleware('')
+  ➜  17▕     Route::post("/add_product", [AddController::class, "addProduct"]);
+     18▕     Route::post("/add_category", [AddController::class, "addCategory"]);
+     19▕ });
+     20▕ 
+     21▕ Route::prefix("customer")->group(function(){
+
+  1   C:\Users\user\Desktop\ecommerce-project\laravel-server\vendor\laravel\framework\src\Illuminate\Routing\Router.php:425
+      Illuminate\Routing\RouteFileRegistrar::register("C:\Users\user\Desktop\ecommerce-project\laravel-server\routes/api.php")
+
+  2   C:\Users\user\Desktop\ecommerce-project\laravel-server\vendor\laravel\framework\src\Illuminate\Routing\Router.php:382
+      Illuminate\Routing\Router::loadRoutes("C:\Users\user\Desktop\ecommerce-project\laravel-server\routes/api.php")

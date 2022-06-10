@@ -19,8 +19,10 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'number',
         'email',
         'password',
+        'user_type',
     ];
 
     /**
@@ -51,4 +53,9 @@ class User extends Authenticatable
     {
         return [];
     }
+
+    public function favorites()
+{
+    return $this->belongsToMany(Favorite::class);
+}
 }

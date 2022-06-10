@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePaymentsTable extends Migration
+class CreateUsersFavoritesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreatePaymentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('payments', function (Blueprint $table) {
+        Schema::create('users_favorites', function (Blueprint $table) {
             $table->id();
-            $table->string("COD");
-            $table->string("credit-card");
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId('favorite_id')->constrained();
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreatePaymentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('payments');
+        Schema::dropIfExists('users_favorites');
     }
 }
