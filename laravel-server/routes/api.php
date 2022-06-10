@@ -16,3 +16,8 @@ Route::prefix("admin")->group(function(){
     Route::post("/add_category", [AddController::class, "addCategory"]);
 });
 
+Route::prefix("customer")->group(function(){
+    Route::get("/get_products/{id?}", [GetController::class, "getProducts"]);
+    Route::get("/get_categories/{id?}", [GetController::class, "getCategories"]);
+
+});
