@@ -2,11 +2,19 @@ body{
     /* background-color: rgb(247, 244, 244) */
     font-family: Arial, Helvetica, sans-serif;
 }
-.greetings{
-margin-left: 23%;
+.topNav{
+    display:flex;
+    justify-content: space-around;
+    margin-right: 60%;
+    gap:100px
 }
+
 h4{
     color: grey;
+}
+#logo{
+    margin-left: 50px;
+    margin-top: 0%;
 }
 .subContainer{
     width:20%;
