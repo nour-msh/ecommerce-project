@@ -8,17 +8,29 @@
     background-color: transparent;
     border: none;
     padding: 20px;
+    color: rgb(20, 20, 95);
 }
 .greetings{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    text-align: center;
+    color: rgb(20, 20, 95);
+}
+.child{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5%;
 }
 h1{
     font-size: 50px;
+}
+.subChild{
+    margin-top: 100px;
 }
 .startBtn{
     height:40px;
     width:200px;
     font-size: 25px;
+    color: #ff66c4;
+    background-color: transparent;
+    border: none;
+    margin-left: 10%;
 }
