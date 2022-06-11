@@ -9,3 +9,16 @@
     border: none;
     padding: 20px;
 }
+.greetings{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h1{
+    font-size: 50px;
+}
+.startBtn{
+    height:40px;
+    width:200px;
+    font-size: 25px;
+}
