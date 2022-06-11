@@ -1,0 +1,11 @@
+.links{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+.links button{
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+}
