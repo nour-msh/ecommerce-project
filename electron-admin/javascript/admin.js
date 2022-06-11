@@ -8,15 +8,21 @@
 
   function openForm(){
     document.getElementById("myForm").style.display = "block";
+    document.getElementById("category").style.color="#50c5fc";
+    document.getElementById("category").style.backgroundColor="#a2dffc62"
   }
 
   function closeForm(){
     document.getElementById("myForm").style.display = "none";
+    document.getElementById("category").style.color="";
   }
 
   function openSecForm(){
     document.getElementById("mySecForm").style.display = "block";
+    document.getElementById("product").style.color="#50c5fc";
+    document.getElementById("product").style.backgroundColor="#a2dffc62"
   }
   function closeSecForm(){
     document.getElementById("mySecForm").style.display = "none";
+    document.getElementById("product").style.color="";
   }

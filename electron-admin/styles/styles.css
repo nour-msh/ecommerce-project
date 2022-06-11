@@ -10,14 +10,18 @@ h4{
 }
 .subContainer{
     width:20%;
+    margin-top: 3%;
 }
 .adminControl{
     background-color: transparent;
     border: none;
-    padding:8%;
+    padding:6%;
+    width:90%;
+    border-radius: 10px;
     margin-left: 5%;
-    font-size: 15px;
-    font-weight: 600;
+    margin-bottom: 3%;
+    font-size: 17px;
+    font-weight: 550;
     color: rgb(192, 191, 191);
 }
 
@@ -40,6 +44,8 @@ top: 25%;
     border: none;
     background: #f1f1f1;
     border-radius: 10px;
+    /* color:#50c5fc */
+    /* color:#a2dffc62 */
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 15px;
