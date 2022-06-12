@@ -2,6 +2,10 @@ body{
     /* background-color: rgb(247, 244, 244) */
     font-family: Arial, Helvetica, sans-serif;
 }
+.topNav{
+    align-items: left;
+    margin-left: 40px;
+  }
 .links{
     display: flex;
     justify-content: right;
@@ -93,3 +97,4 @@ h1{
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
