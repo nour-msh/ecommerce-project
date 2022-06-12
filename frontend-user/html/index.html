@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
     <head>
         <title>User's Page</title>
         <link rel="stylesheet" href="../styles/styles.css">
@@ -6,10 +6,19 @@
     <body>
         <div id="container">
             <div class="links">
-                <a href=#><button>Home</button></a>
-                <a href=#><button>Sign Up</button></a>
-                <a href=#><button>Log In</button></a>
-                <a href=#><button>Categories</button></a>
+                <button>Home</button>
+                <button id="signupBtn">Sign Up</button>
+                <button id="loginBtn">Log In</button>
+                <div class="dropdown">
+                    <button id="categoriesBtn">Categories</button>
+                    <div id="myDropDown" class="dropdown-content">
+                        <a #href="women">Women's Fashion</a>
+                        <a #href="men">Men's Fashion</a>
+                        <a #href="kids">Kids' Fashion</a>
+                        <a #href="BagsShoes">Bags & Shoes</a>
+                        <a #href="BeautyHealth">Beauty & Health</a>
+                    </div>
+                </div>
             </div>
 
             <div class="form-popup" id="signupForm">
@@ -18,7 +27,7 @@
                   <input type="text" placeholder="Name">
                   <input type="text" placeholder="Email">
                   <input type="password" placeholder="Password">
-                  <button id="signupBtn" class="accessBtn">Sign Up</button>
+                  <button id="closeBtn" class="accessBtn">Sign Up</button>
                 </form>
             </div>
             <div class="form-popup" id="loginForm">
@@ -26,7 +35,7 @@
                   <label>Log In</label>
                   <input type="text" placeholder="Email">
                   <input type="password" placeholder="Password">
-                  <button id="loginBtn" class="accessBtn">Log In</button>
+                  <button id="secCloseBtn" class="accessBtn">Log In</button>
                 </form>
             </div>
             <div class="greetings">
@@ -36,5 +45,7 @@
                 </div>
                 <div class="child"><img class="background-image" src="../assets/background-image.jpeg" height="600px" width="800px"></div>
             </div>
+
+            <script src="../javascript/user.js" type="text/javascript"></script>
     </body>
 </html>
