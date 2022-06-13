@@ -1,7 +1,7 @@
 document.getElementById("signupBtn").onclick=openFirstForm;
-document.getElementById("closeBtn").onclick=closeFirstForm();
+document.getElementById("closeButton").onclick=closeFirstForm();
 document.getElementById("loginBtn").onclick=openSecondForm;
-document.getElementById("secCloseBtn").onclick=closeSecondForm();
+document.getElementById("secondCloseBtn").onclick=closeSecondForm();
 document.getElementById("categoriesBtn").onclick=dropDown;
 
 
