@@ -1,6 +1,6 @@
 const btn = document.getElementById("loginButton");
-const Email= document.getElementById("email");
-const Password= document.getElementById("password");
+const Email= document.getElementById("myEmail");
+const Password= document.getElementById("myPassword");
 btn.addEventListener("click", function(){
     let data = new FormData();
         data.append('email', Email.value);
